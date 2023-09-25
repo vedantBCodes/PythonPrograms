@@ -9,9 +9,12 @@ def checkForPerfectSquare(num):
 
 try:
     num = int(input("Enter a number : "));
+    if((num<0)):
+        print(f"{num} is  not a perfect square");
+        exit(0);
     check = checkForPerfectSquare(num);
 
-    if (check == True):
+    if ((check == True)):
         print(f"{num} is  a perfect square");
     else:
         print(f"{num} is  not a perfect square");
