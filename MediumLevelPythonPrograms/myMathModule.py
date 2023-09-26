@@ -29,11 +29,11 @@ def mod(a,b):
 
 class greeting:
     greet="Hello !";
-    def gm(self,name):
+    def gm(self,name="there"):    #Default argument
         print(f"{self.greet} Good morning {name}");
 
-    def gn(self,name):
+    def gn(self,name="there"):
         print(f"{self.greet} Good night {name}");
 
-    def gl(self,name):
+    def gl(self,name="there"):
         print(f"{self.greet} Good luck {name}");
