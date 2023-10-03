@@ -2,8 +2,6 @@ str1=input("Enter the snake case string : ");
 
 strList=str1.split("_");
 
-print(strList);
-
 str2="";
 cnt1=1;
 for i in strList:
