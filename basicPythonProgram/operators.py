@@ -8,7 +8,7 @@ print(2*3);   #--->6
 print(2**3);  #--->8   ** is an exponant operator 2**3 means 2*2*2
 print(5/2);   #--->2.5 (not 2)
 print(4/2);   #---->2.0(Always a float value
-print(5//2);  #--->2   // is a flow division operator
+print(5//2);  #--->2   // is a flow division operator 
 print(5%2);   #--->1
 
 #Relational Operator
