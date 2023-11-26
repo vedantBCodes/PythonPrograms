@@ -6,6 +6,9 @@ name2="pratik";
 print(name1.upper());
 print(name1.lower());
 print(name2.index('a'));
+
+#As strings in python are immutable in nature , above function will not change the original string
+
 print('t' in name2);
 x=len(name1);
 print(f"The number of characters in {name1} are {x}");
