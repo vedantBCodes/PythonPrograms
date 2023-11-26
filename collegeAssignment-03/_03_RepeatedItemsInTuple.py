@@ -1,7 +1,20 @@
 numList=tuple(input("Enter numbers seperated by space :").split(" "));
 
-length=len(numList);
+#Method-1
 
+tuple1=[];  #an empty tuple
+
+for i in numList:
+    if(numList.count(i)>1):
+        if(i not in tuple1):
+            tuple1.append(i);
+
+print("Repeated items in a given tuple are :",end=" ");
+print(tuple1);
+
+#Method-2
+
+length=len(numList);
 print("Repeated items in a given tuple are :",end=" ");
 
 for i in range(0,length):
