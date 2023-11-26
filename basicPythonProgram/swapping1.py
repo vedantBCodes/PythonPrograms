@@ -1,3 +1,5 @@
+#Swapping using 3rd variable
+
 num1=input("Enter 1st number:");
 num2=input("Enter 2nd number:");
 temp=num1;
