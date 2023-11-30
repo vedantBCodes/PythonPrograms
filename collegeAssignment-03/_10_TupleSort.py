@@ -5,7 +5,7 @@ tuple1.sort();
 tuple1=tuple(tuple1);
 print(f"Tuple items in ascending order {tuple1}");
 
-#Sorting in Ascending order
+#Sorting in Descending order
 
 tuple1=list(tuple1);
 tuple1.reverse();
