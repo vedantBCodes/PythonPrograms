@@ -9,18 +9,18 @@ def greet1():
 greet1();
 
 #fucntion with arguments
-def greet1(name,age):
+def greet2(name,age):
     print(f"Hlw {name} . You are {age} years old");
 
-greet1("veda","30");
+greet2("veda","30");
 
 #Functions with return type
 
-def greet(name,age):
+def greet3(name,age):
     str1=f"Hlw {name} . You are {age} years old";
     return str1;
 
-print(greet("veda","101"));
+print(greet3("veda","101"));
 
 
 
