@@ -3,10 +3,12 @@
 
 EData=[21,"vedant",70000.00,True];  #EData --> Employee Data
 
-EID=EData[0];
+(EID,EName,ESalary,EisMale)=EData;  #Unpacking tuple items
 
-EName=EData[1];
+print(f"Employee ID : {EID}");
 
-ESalary=EData[2];
+print(f"Employee Name : {EName}");
 
-EisMale=EData[3];
+print(f"Employee Salary : {ESalary}");
+
+print(f"Employee Gender -Male : {EisMale}");
