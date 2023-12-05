@@ -18,6 +18,8 @@ my_db.commit();
 
 print("Data Updated");
 
+#Displaying the updated data
+
 my_Cursor.execute("select * from studentData");
 
 tableData=my_Cursor.fetchall();
