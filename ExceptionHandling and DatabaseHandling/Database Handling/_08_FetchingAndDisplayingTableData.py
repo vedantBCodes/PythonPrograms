@@ -16,3 +16,8 @@ my_record=my_cursor.fetchall(); #fetchall() method fetch all the data from the t
 
 for i in my_record:
     print(i);
+
+#One can display the data without using fetchall() method
+
+for i in my_cursor:
+    print(i);
