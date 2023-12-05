@@ -11,3 +11,5 @@ except:   #Except block will execute if the exception occurs
 
 else:     #else block will only be executed if the except block doesn't execute
     print(result);
+finally:  #The finally: block is a place to put any code that must execute, whether the try-block raised an exception or not.
+    print("Division");
