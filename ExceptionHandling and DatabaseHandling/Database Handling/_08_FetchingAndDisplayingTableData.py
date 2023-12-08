@@ -9,6 +9,7 @@ my_cursor=my_db.cursor();
 my_cursor.execute("select * from Student.studentData"); #If we already set the database then only table name is enough
 
 my_record=my_cursor.fetchall(); #fetchall() method fetch all the data from the table
+#one can use fetchone() method also to fetch single record
 
 #Now all the record from studentData table ia in the my_record object
 
