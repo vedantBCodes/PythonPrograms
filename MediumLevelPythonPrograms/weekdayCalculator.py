@@ -1,7 +1,8 @@
 
-      #Know weekday on any date
+                                            #Know weekday on any date
 
-date=input("Enter any date (in DDMMYYYY formate seperated by space ) :").split();
+date=input("Enter the date (in DDMMYYYY formate seperated by space ) :").split();
+
 day=int(date[0]);
 month=int(date[1]);
 year=int(date[2]);
@@ -11,7 +12,6 @@ def leapYear(year):
         return True;
     else:
         return False;
-
 
 check=leapYear(year);
 
@@ -44,8 +44,6 @@ if(month!=1):
 else:
     month=0;
 
-month=str(month);
-
 x=28;  # Days in feb of Normal year
 
 if(check==True):
@@ -53,29 +51,29 @@ if(check==True):
 
 def countDays(month):
     match month:
-        case "0":
+        case 0:
             return 0;
-        case "1":
+        case 1:
             return 31;
-        case "2":
+        case 2:
             return 31 + x;
-        case "3":
+        case 3:
             return  31 + x + 31;
-        case "4":
+        case 4:
             return  31 + x + 31 +30;
-        case "5":
+        case 5:
             return  31 + x + 31 + 30 + 31;
-        case "6":
+        case 6:
             return  31 + x + 31 + 30 + 31 + 30;
-        case "7":
+        case 7:
             return  31 + x + 31 + 30 + 31 + 30 + 31;
-        case "8":
+        case 8:
             return  31 + x + 31 + 30 + 31 + 30 + 31 + 31;
-        case "9":
+        case 9:
             return  31 + x + 31 + 30 + 31 + 30 + 31 + 31 + 30;
-        case "10":
+        case 10:
             return  31 + x + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31;
-        case "11":
+        case 11:
             return  31 + x + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30;
 
 daysInMonths=countDays(month);
@@ -88,7 +86,6 @@ totalOddDays=TotalOddDaysInYears+oddDaysInRemainingDays;
 
 totalOddDays=totalOddDays%7;
 
-print(totalOddDays);
 def weekDayCalculator(oddDays):
     match oddDays:
         case 0:
@@ -100,7 +97,7 @@ def weekDayCalculator(oddDays):
         case 3:
             return "Wednesday";
         case 4:
-            return "Thusday";
+            return "Thursday";
         case 5:
             return "Friday";
         case 6:
@@ -108,6 +105,7 @@ def weekDayCalculator(oddDays):
         case 7:
             return "Sunday";
 
+
 weekDay=weekDayCalculator(totalOddDays);
 
-print(f"The Weekday on an entered date is {weekDay}");                                        
+print(f"The Weekday on {date[0]} {date[1]} {date[2]} is {weekDay}");
