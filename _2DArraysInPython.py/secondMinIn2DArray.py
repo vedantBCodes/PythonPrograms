@@ -24,7 +24,8 @@ for  row in arr:
             min=element;
 
 print(min);
-x=sys.maxsize;
+
+x=sys.maxsize; # sys.maxSize returns the largest integer 
 for  row in arr:
     for element in row:
         if(element < x and element > min):
