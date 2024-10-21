@@ -16,13 +16,19 @@ for i in range(row):
 
 # arr=[[1,2,2],[7,8,6],[7,1,1]];
 
-newArr=[];
+# Converting 2D array into 1D array
+
+newArr=[];   #Creating an empty array
 
 for  row in arr:
     for element in row:
         newArr.append(element);
 
 len=len(newArr);
+
+# OLD APPROACH
+
+"""
 
 for  i in range(len):
     cnt=0;
@@ -37,5 +43,19 @@ for  i in range(len):
             cnt+=1;
     if(check!=True):
         print(f"{newArr[i]} occurs {cnt} times");
+        
+"""
 
+# NEW APPROACH
 
+for  i in range(len):
+    cnt=0;
+    check=False;
+    for k in range(0,i):
+        if(newArr[i]==newArr[k]):
+            break;
+    else:
+        for j in range(i,len):
+            if(newArr[i]==newArr[j]):
+                cnt+=1;
+        print(f"{newArr[i]} occurs {cnt} times");
