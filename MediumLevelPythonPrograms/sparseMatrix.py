@@ -28,12 +28,21 @@ sparseMatrix=[[0,0,0,3,4],
               [9,8,0,0,0],
               [0,0,0,0,0]];
 
-size=0;
+size=0;   #size - total number of non-zero elements
 
 for i in range(4):
     for j in range(5):
         if(sparseMatrix[i][j]!=0):
             size+=1;
+
+# Alternate solution to calculate size  (Using list comprehension)
+
+"""
+nonzerosInSparse=[element for row in sparseMatrix for element in row if(element!=0)];
+
+size=len(sparseMatrix);
+
+"""
 
 col=size;
 row=3;
