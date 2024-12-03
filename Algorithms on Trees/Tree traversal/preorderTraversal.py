@@ -34,12 +34,12 @@ class BST:
 
     def returnRoot(self):
         return self.root;
-    def preorder(self,root):
+    def preorder(self,root):   # Root --> Left --> Right
         if(root==None):
-            return;
-        print(root.data,end=" ");
-        self.preorder(root.left);
-        self.preorder(root.right);
+            return;                          #Hint
+        print(root.data,end=" ");            #Root
+        self.preorder(root.left);            #Left
+        self.preorder(root.right);           #Right
 
 obj=BST();
 obj.insert(50);
