@@ -36,10 +36,10 @@ class BST:
         return self.root;
     def postorder(self,root):   # Left --> Right --> Root
         if(root==None):
-            return;                          #Hint
-        self.postorder(root.left);            #Left
-        self.postorder(root.right);           #Right
-        print(root.data, end=" ");  # Root
+            return;                           #Hint
+        self.postorder(root.left);            # Left
+        self.postorder(root.right);           # Right
+        print(root.data, end=" ");            # Root
 
 obj=BST();
 obj.insert(50);
