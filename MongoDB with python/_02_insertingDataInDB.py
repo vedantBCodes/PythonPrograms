@@ -11,3 +11,9 @@ data={"Name":"Vedant",
       "Degree":"MCA"}  #Here we have created a document (record) named -> data
 
 mycol.insert_one(data); # Here we are inserting the document(record) into a collection(table)
+
+data2=[{"Name":"Vishwjeet","Age":24,"Degree":"MBBS"},
+       {"Name":"Shivtej","Age":21,"Degree":"BTech"},
+       {"Name":"Paris","Age":25,"Degree":"MBA"}];
+
+mycol.insert_many(data2); #Here we are inserting many records at the same time
