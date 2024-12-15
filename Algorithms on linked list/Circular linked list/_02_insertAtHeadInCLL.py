@@ -4,7 +4,6 @@ class Node:
         self.next = None
 
 
-
 def insertAtHead(self, data):
     newNode = Node(data)
     if not self.head:  # List is empty
