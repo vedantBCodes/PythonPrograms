@@ -55,5 +55,3 @@ q1.delete();
 
 
 q1.display();
-
-
