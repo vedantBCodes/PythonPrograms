@@ -20,4 +20,4 @@ elif((marks>=70)and(marks<80)):
 elif((marks>=60)and(marks<70)):
     print("B");
 else:
-    print(C);
+    print("C");

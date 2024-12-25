@@ -44,10 +44,9 @@ class BST:
                      parent.left = temp.left;
                  else:
                      parent.right = temp.left;
-                     parent.right = temp.right;
              # Case 3 : if the node has both the child nodes
              # In such case , find the in-order successor (smallest node in right subtree)
-             if (temp.left != None and temp.right == None):
+             if (temp.left != None and temp.right != None):
                  current=temp.right;
                  currentParent=None;
                  while (current.left != None):
@@ -59,12 +58,3 @@ class BST:
                  if(current.right!=None):
                      currentParent.left=current.right;
              return self.root;
-
-
-
-
-
-
-
-
-
