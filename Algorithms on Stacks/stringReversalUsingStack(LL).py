@@ -30,11 +30,10 @@ def strReverse(str):
     stack1 = Stack();
     for ch in str:
         stack1.push(ch);
-    newStr = [];  # Empty list
+    newStr="";    #An empty string
     while (stack1.isEmpty() != True):
-        newStr.append(stack1.pop());
-    for x in newStr:
-        print(x, end="");
+        newStr+=stack1.pop();
+    print(newStr);
 
 str="vedant"
 strReverse(str);
