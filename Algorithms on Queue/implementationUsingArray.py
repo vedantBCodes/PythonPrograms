@@ -6,8 +6,8 @@ class Queue:
     def __init__(self,size):
         self.arr=[0] * size;  #Defining an empty array with size=size
         self.size=size;  #Initializing value of size with size
-        self.rare=0;    #Initializing rare variable with 0 which represents the number of inserted elements
-        self.front=0;   #Initializing front variable with 0 which represents the number of deleted elements
+        self.rare=0;    #Initializing rare variable with 0 which represents the index of raremost element in the array and also the number of inserted elements
+        self.front=0;   #Initializing front variable with 0 which represents the index of frontmost element in an array and also the number of deleted elements
 
     def isEmpty(self):
         if(self.rare==self.front):
