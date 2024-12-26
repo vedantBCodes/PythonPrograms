@@ -9,7 +9,7 @@ class Node:
 
 class LinkedList:
     def __init__(self):
-        self.top=None;
+        self.top=None;   #Here top represents a node
 
     def push(self,data):
         newNode=Node(data);

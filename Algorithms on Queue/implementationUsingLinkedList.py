@@ -10,7 +10,7 @@ class Node:
 class Queue:
     def __init__(self):
         self.front=None;
-        self.rare=None;
+        self.rare=None;   #Here both front and rare represents a node structure
 
     def insert(self,data):
         newNode=Node(data);
