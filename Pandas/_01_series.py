@@ -5,7 +5,7 @@ import pandas as pd
 # 1. Create Series from a List
 marks = [10,20,30,40,50];
 
-data1 = pd.Series(marks);
+data1 = pd.Series(marks);  # Here data1 is the name of the series
 
 print(data1);
 
@@ -56,12 +56,12 @@ print(data1.size);
 
 # Basic Operations on Series
 # Mathematical Operations
-print(data1 + 5);
 
 # Adds 5 to each value
-print(data1 * 2);
+print(data1 + 5);
 
 # Multiply each value by 2
+print(data1 * 2);
 
 # Find Max, Min, Average
 print(data1.max());

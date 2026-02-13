@@ -39,7 +39,7 @@ print(df6);  # Displays the common records along with the remaining all records 
 # (d) Outer Join
 
 df7= pd.merge(df1,df2,on="ID",how="outer");
-print(df7);  # Displays the common records along with the remaining all records of the both right and left Dataframes
+print(df7);  # Displays all the records of the both right and left Dataframes
 
 Info3 = {
     "Name":["Ritesh","Vinod"],

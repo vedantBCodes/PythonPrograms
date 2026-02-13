@@ -24,7 +24,7 @@ print(data1);
 data2 = pd.read_csv(
     "data1.csv",
     header=None,
-    names=["Name", "Marks", "City"]
+    names=["Name1", "Marks1", "City1"]  # If there is no header then this will be header
 )
 
 print(data2);

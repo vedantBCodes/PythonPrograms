@@ -40,7 +40,9 @@ print(data);
 # Method 1: Using drop() (Recommended)
 
 data.drop("City", axis=1, inplace=True);
+# In pandas, inplace=True means: “Make the change in the original DataFrame itself.”
 
+print(data);
 # Method 2: Using del Keyword
 
 del data["Age"];

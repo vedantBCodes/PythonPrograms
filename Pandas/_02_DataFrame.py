@@ -2,7 +2,7 @@ import pandas as pd
 
 # Creating DataFrame
 
-# 1.Create DataFrame from List
+# 1.Create DataFrame from List (Nested List)
 
 Info1 = [["Vedant",70,85],
          ["Rahul",90,95],
@@ -12,11 +12,11 @@ Info1 = [["Vedant",70,85],
          ["Pitte",85,98]
          ];
 
-data1=pd.DataFrame(Info1);
+data1=pd.DataFrame(Info1);  # Here data1 is the name of the DataFrame
 
 print(data1);
 
-data2=pd.DataFrame(Info1,columns=["Name","Marks1","Marks2"]);
+data2=pd.DataFrame(Info1,columns=["Name","Marks1","Marks2"]);  # Prividing Custom column name
 
 print(data2);
 
@@ -32,7 +32,6 @@ data3 = pd.DataFrame(Info2, columns=["Name", "Marks", "Age"]);
 print(data3);
 
 # 3.Create DataFrame from Dictionary
-
 
 Info3 = {"Vedant":[70,85],
          "Rahul":[90,95],
@@ -73,21 +72,20 @@ print(data2[["Name", "Marks1"]]);
 # 🔹 Get Row (By Index)
 print(data1.loc[0]);
 
+# Basic Operations on DataFrame
 
-# 📌 Basic Operations on DataFrame
-
-# 🟢 Find Average, Max, Min
+# Find Average, Max, Min
 print(data2["Marks1"].mean());
 print(data2["Marks1"].max());
 print(data2["Marks1"].min());
 
-# 🟢 Filter Data
+# Filter Data
 print(data2[data2["Marks1"] > 80]);
 
-# 🟢 Add New Column
+# Add New Column
 data2["Result"] = ["Pass", "Fail", "Pass","Fail","Pass","Pass"]
 
-# 🟢 Delete Column
+# Delete Column
 data2.drop("Marks2", axis=1, inplace=True);
 
 

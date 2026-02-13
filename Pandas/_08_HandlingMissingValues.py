@@ -20,7 +20,7 @@ data1.to_csv("data4.csv");
 
 # Before handling them:
 # Check where values are missing
-print(data1.isna());  #It will return the whole data with True of there is a missing value and False if there is something other than NaN
+print(data1.isna());  #It will return the whole data with True if there is a missing value and False if there is something other than NaN
 
 # 3.Count missing values
 print(data1.isna().sum());  #It will show the no. of missing values per column with column name
@@ -28,7 +28,7 @@ print(data1.isna().sum());  #It will show the no. of missing values per column w
 # 4.dropna() → Remove Missing Data   --> dropna() deletes rows/columns that contain NaN.
 
 # 4.1 Remove Rows with Any NaN (Default)
-df1 =data1.dropna();
+df1 = data1.dropna();
 print(df1);
 
 # Removes any row that has at least one NaN.

@@ -18,7 +18,7 @@ print(data2);
 
 print(data2.index);
 
-#  .columns → Get Column Names
+# .columns → Get Column Names
 
 print(data2.columns);
 
@@ -28,11 +28,11 @@ print(data2.describe());
 
 # .head() → First Rows
 
-print(data2.head(3));  #Default → first 5 rows
+print(data2.head(3));  # Default → first 5 rows
 
 # .tail() → Last Rows
 
-print(data2.tail(3));  #Default → Last 5 rows
+print(data2.tail(3));  # Default → Last 5 rows
 
 # Slice First n Rows
 n=3;
@@ -48,9 +48,11 @@ print (data2.sort_index());
 
 #  .loc → Label Based Selection loc-location
 
-print(data2.loc[3]);
-print(data2.loc[3,"Marks"]);
-print(data2.loc[:,"Marks"]);
+print("\n\n",data2.loc[3]);  # print the data from the 4rd row / 3rd index(i.e record of Priya)
+print(data2.loc[3,"Marks"]); # print the marks of Priya
+print(data2.loc[:,"Marks"]); # Print the marks of all the students
+print(data2.loc[:,["Name","Marks"]]); # Print the name and marks of all the students
+
 
 print(data2.loc[data2["Marks"] > 85]);
 
